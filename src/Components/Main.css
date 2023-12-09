@@ -1,0 +1,37 @@
+.myCard {
+  position: relative;
+  width: 100%;
+  height: 35rem;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  background: #F2F2F2;
+}
+
+.myCard.flipped {
+  transform: rotateY(180deg);
+}
+
+.card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  background: #F2F2F2;
+}
+
+.card__face--back {
+  transform: rotateY(180deg);
+}
+
+.active{
+  background-color: #c5c5c5;
+}
